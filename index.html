@@ -3,42 +3,134 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tofu Authenticator</title>
+    <title>Tofu Authenticator for iOS</title>
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/main.css">
   </head>
   <body>
-    <h1>Tofu Authenticator</h1>
-    <p>
-    Tofu is an iOS app that generates one-time passwords to help you protect
-    your online accounts.
-    </p>
-    <p>
-    These passwords can be used in conjunction with your normal password when
-    you sign into services like Google, Facebook, Dropbox, Amazon, and GitHub.
-    </p>
-    <p>
-    Tofu works with all services that provide two-factor authentication using
-    the HOTP and TOTP algorithms.
-    </p>
-    <p>
-    It does not require a network or cellular connection and can be used in
-    airplane mode.
-    </p>
-    <p>
-    Features include:
+    <header>
+      <img class="icon" src="/images/icon.svg">
+      <h1>Tofu</h1>
+      <p>
+      An easy-to-use, open-source two-factor authentication app designed
+      specifically for iOS.
+      </p>
 
-    <ul>
-      <li>Adding accounts both manually and by scanning QR codes</li>
-      <li>Searching for accounts</li>
-      <li>
-        Support for counter-based and time-based passwords with 6 or 8 digits
-      </li>
-      <li>Password generation using the SHA1, SHA256, and SHA512 algorithms</li>
-    </ul>
+      <a href="https://itunes.apple.com/app/tofu-authenticator/id1082229305"
+         title="Tofu on the App Store"
+         class="app-store">
+        <img src="/images/app-store.svg" alt="Download on the App Store">
+      </a>
+    </header>
 
-    <p>
-    For app issues and general feedback, please email
-    <a href="mailto:calle@calleerlandsson.com">calle@calleerlandsson.com</a>.
-    </p>
+    <section class="screenshots">
+      <a href="/images/accounts.png"><img src="/images/accounts.png"></a>
+      <a href="/images/copy.png"><img src="/images/copy.png"></a>
+      <a href="/images/search.png"><img src="/images/search.png"></a>
+      <a href="/images/add-account.png"><img src="/images/add-account.png"></a>
+      <a href="/images/enter-manually.png"><img src="/images/enter-manually.png"></a>
+    </section>
+
+    <section class="features">
+      <h1>Features</h1>
+      <ol>
+        <li class="scanning">
+          <h2>Scanning</h2>
+          Scan the QR code your issuer provides to automatically add your
+          account.
+        </li>
+        <li class="search">
+          <h2>Search</h2>
+          Search your accounts by name to quickly find the one you're looking
+          for.
+        </li>
+        <li class="compatibility">
+          <h2>Compatibility</h2>
+          Support for both counter-based and time-based one-time passwords with
+          6 or 8 digits using the SHA1, SHA256, and SHA512 algorithms.
+        </li>
+        <li class="offline">
+          <h2>Offline</h2>
+          Requires no network or cellular connection and can be used in airplane
+          mode.
+        </li>
+        <li class="security">
+          <h2>Security</h2>
+          All your account details are safely stored in the iOS keychain.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h1>About</h1>
+      <p>
+      Tofu generates one-time passwords to help you protect your online
+      accounts. These passwords are used together with your normal password when
+      you sign into services like Google, Facebook, Dropbox, Amazon, and GitHub.
+      </p>
+      <p>
+      Tofu works with all services that provide two-factor authentication using
+      the HOTP and TOTP algorithms. It does not require a network or cellular
+      connection and can be used in airplane mode.
+      </p>
+      <p>
+      Tofu is open source and free software licensed under the ISC license. The
+      source code is available for review and modification on
+      <a href="https://github.com/calleerlandsson/tofu"
+         title="The Tofu GitHub repository">GitHub</a>.
+      </p>
+    </section>
+
+    <section id="faq" class="faq">
+      <h1>FAQ</h1>
+      <dl>
+        <dt>What is two-factor authentication?</dt>
+        <dd>
+        <p>
+        Two-factor authentication requires you to provide two separate means of
+        identification when you sign into your online accounts. One is commonly
+        something you know, e.g. your password, and one is something you
+        possess, like your iPhone.
+        </p>
+        <p>
+        Using two-factor authentication requires someone to have both your
+        password and your iPhone to get into your account. This makes your
+        account much harder to hack and hijack.
+        </p>
+        <p>
+        Many online services provide two-factor authentication by requiring you
+        to enter a one-time password in addition to your normal username and
+        password. To generate this password, a shared secret is required. Tofu
+        stores this secret securely in your iPhone's keychain and generates the
+        password for you.
+        </p>
+        </dd>
+        <dt>
+        What is the difference between two-factor authentication, 2FA, and
+        two-step verification?
+        </dt>
+        <dd>
+        There is no difference. They all refer to the same concept.
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h1>Help</h1>
+      <p>
+      Do you need help or have a question which isn't answered in
+      <a href="#faq"
+         title="Frequently Asked Questions">the FAQ section above</a>?
+      Send me an email on
+      <a href="mailto:calle@calleerlandsson.com"
+         title="Calle Erlandsson">calle@calleerlandsson.com</a> and I'll do my
+      best to get back to you as soon as possible.
+      </p>
+      <p>
+      You can also file an issue or submit a pull request on
+      <a href="https://github.com/calleerlandsson/tofu"
+         title="The Tofu GitHub repository">GitHub</a>.
+      </p>
+    </section>
   </body>
 </html>

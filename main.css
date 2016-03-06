@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-light.eot");
+  src: url("/fonts/roboto-light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/roboto-light.woff") format("woff"),
+    url("/fonts/roboto-light.ttf") format("truetype"),
+    url("/fonts/roboto-light.svg#robotolight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-regular.eot");
+  src: url("/fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/roboto-regular.woff") format("woff"),
+    url("/fonts/roboto-regular.ttf") format("truetype"),
+    url("/fonts/roboto-regular.svg#robotoregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-medium.eot");
+  src: url("/fonts/roboto-medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/roboto-medium.woff") format("woff"),
+    url("/fonts/roboto-medium.ttf") format("truetype"),
+    url("/fonts/roboto-medium.svg#robotomedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Typography */
+
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #000;
+  font: 300 20px Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+
+p, dl, ol {
+  margin: 1em 0;
+}
+
+a {
+  color: #007aff;
+}
+
+/* Layout */
+
+body {
+  background: linear-gradient(#eee, #fff 10em);
+  margin: 0;
+}
+
+header, section {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 40em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+
+header .icon {
+  height: 5em;
+  margin-top: 2em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+
+header .app-store img {
+  height: 3em;
+}
+
+/* Sections */
+
+section h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 1em 0 0;
+}
+
+section h1 + p,
+section h1 + dl,
+section h1 + ol {
+  margin-top: 0em;
+}
+
+/* Screenshots */
+
+.screenshots {
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  margin: 1.5em 0;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 5%;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.screenshots img {
+  display: inline-block;
+  height: 18em;
+  margin-left: 1em;
+}
+
+.screenshots a:first-child img {
+  margin-left: 0;
+}
+
+@media (min-width: 880px) {
+  .screenshots img {
+    height: 12.4em;
+  }
+}
+
+/* Features */
+
+.features {
+  line-height: 1.55;
+}
+
+.features ol {
+  list-style: none;
+  margin-top: 0.75em;
+  padding: 0;
+}
+
+.features li {
+  background-repeat: no-repeat;
+  background-size: 3em;
+  margin-bottom: 1.5em;
+  min-height: 3em;
+  padding-top: 3.7em;
+}
+
+@media (min-width: 400px) {
+  .features li {
+    margin-bottom: 1em;
+    padding-left: 3.7em;
+    padding-top: 0;
+  }
+}
+
+.features .scanning {
+  background-image: url("/images/qr.svg");
+}
+
+.features .search {
+  background-image: url("/images/search.svg");
+}
+
+.features .compatibility {
+  background-image: url("/images/heart.svg");
+}
+
+.features .offline {
+  background-image: url("/images/airplane.svg");
+}
+
+.features .security {
+  background-image: url("/images/lock.svg");
+}
+
+.features h2 {
+  display: inline;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.features h2:after {
+  content: ".";
+}
+
+/* FAQ */
+
+.faq dt {
+  font-weight: 400;
+  margin-top: 2em;
+}
+
+.faq dt:first-child {
+  margin-top: 0;
+}
+
+.faq dd {
+  margin: 1em 1em 0;
+}
