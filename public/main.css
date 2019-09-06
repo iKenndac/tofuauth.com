@@ -53,7 +53,7 @@ a {
 /* Layout */
 
 body {
-  background: linear-gradient(#eee, #fff 10em);
+  background: linear-gradient(#eee, #fff 10em) no-repeat;
   margin: 0;
 }
 
